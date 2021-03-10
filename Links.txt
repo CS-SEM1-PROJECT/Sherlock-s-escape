@@ -1,0 +1,20 @@
+Pygame Tutorial
+https://www.youtube.com/watch?v=QFvqStqPCRU
+
+
+Article for Player Movement
+https://opensource.com/article/17/12/game-python-moving-player
+
+Article for setting Background Images
+https://stackoverflow.com/questions/28005641/how-to-add-a-background-image-into-pygame
+
+Setting Up PyQt5 (GUI we are using for first two screens)
+https://www.youtube.com/watch?v=Vde5SH8e1OQ
+
+
+Using PyQt5 
+https://www.youtube.com/watch?v=FVpho_UiDAY
+
+
+Pygame Documentation
+https://www.pygame.org/docs/
