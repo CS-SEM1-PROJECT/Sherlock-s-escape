@@ -70,19 +70,19 @@ class Puzzle(object):
 		self.screen = screen
 
 	def draw_puzzle(self):
-		self.x = 1680
-		self.y = 340
+		self.x = 1550
+		self.y = 140
 		self.pos = Vector2(self.x,self.y)
 		puzzle_rect = pg.Rect(self.pos.x,self.pos.y,cell_size,cell_size)
 		pg.draw.rect(self.screen,(0,0,0),puzzle_rect)
 		
 
 	def picture(self):
-		riddle = pg.image.load("Quiz_questions.jpg")
+		riddle = pg.image.load("Jumbled_word.jpg")
 		(self.screen).blit(riddle,(100,200))
 
 	def inputbox(self,event):
-		Input = InputBox(475, 700, 140, 40)
+		Input = InputBox(300, 650, 140, 40)
 		self.input = Input
 		
 		self.input.update()
@@ -117,10 +117,10 @@ class Main(object):
 			
 
 
-class Room1(object):
+class Room3(object):
 
 	
-	def Room_1(self,mainWindow):
+	def Room_3(self,mainWindow):
 		global b
 		pg.init()
 
@@ -134,7 +134,7 @@ class Room1(object):
 
 		screen = pg.display.set_mode((1920,1000))
 		clock = pg.time.Clock()
-		bg = pg.image.load("Room1_bg.jpg")
+		bg = pg.image.load("Room3_bg.jpg")
 		DISPLAYSURF = pg.display.set_mode((1920,1000),pg.RESIZABLE)
 
 		room_map = pg.Surface((290,290))
@@ -143,12 +143,12 @@ class Room1(object):
 		
 		event = pg.event.get()
 
-		x_pos = 1500
-		y_pos = 100
+		x_pos = 1680
+		y_pos = 375
 		#main_game = Main(screen,x_pos,y_pos,event)
 
 
-		inputbox = InputBox(475, 700, 140, 40)
+		inputbox = InputBox(300, 650, 140, 40)
 
 		Button = BUTTON("NEXT ROOM>")
 
@@ -167,7 +167,7 @@ class Room1(object):
 
 
 			font = pg.font.Font('Poppins-Regular.ttf', 72)										# Using Font
-			text = font.render('Room 1', True, (255,255,255))
+			text = font.render('Room 3', True, (255,255,255))
 			textRect = text.get_rect()
 			textRect.center = (200,100)
 			screen.blit(text,textRect)
@@ -214,7 +214,7 @@ class Room1(object):
 
 				pos = pg.mouse.get_pos()
 
-				if input_answer == "b,c,c":
+				if input_answer == "mycroft":
 					b = 1
 
 					
