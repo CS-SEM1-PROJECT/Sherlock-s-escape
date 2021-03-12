@@ -71,7 +71,7 @@ class Puzzle(object):
 
 	def draw_puzzle(self):
 		self.x = 1500
-		self.y = 101
+		self.y = 105
 		self.pos = Vector2(self.x,self.y)
 		puzzle_rect = pg.Rect(self.pos.x,self.pos.y,cell_size,cell_size)
 		pg.draw.rect(self.screen,(0,0,0),puzzle_rect)
